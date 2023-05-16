@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <div class="divcapa"><img src="img/capa.jpg" alt="capa" id="capa"></div>
+    <title>Fast Burger</title>
+   
+  </head>
+
+    <body class="corpo">
+        <header>
+            <nav id="barraIni"> 
+                <a href="inicio.html"> Inicio</a>
+                <a href="cardapio.html">Cardápio</a>
+                <a href="monte.html">Monte seu Hambúrguer</a>
+                <a href="carrinho.html">Carrinho</a>
+                <a href="login.html">Login</a>
+            </nav>
+        </header>
+        
+        <section class="pagina" style="background-color: #e4e2e2" size>
+            <main>
+                <div class="titulo-topo" style="padding: 15px; display: flex; justify-content: center" >
+                    <span style="text-transform: uppercase;  font-size: 30px;">Monte seu Hambúrguer</span>
+                    <div class="space"></div>
+                </div>
+                <div class="produtos">
+                    <h3>
+                        <span style="background-color: #fb3f52; padding: 8px; border-radius: 4%;"> ESCOLHA SEU PÃO</span>  
+                    </h3>
+                        <ul>
+                            <li style="display: flex; align-items: flex-start;">
+                                <div style="align-self: center; padding-left:2px;" id="produto28">
+                                   <span id="nome_produto"> PÃO AUSTRALIANO ARTESANAL<br></span>
+                                    <small id="valor">R$9,00</small>
+                                    <span>
+                                        <button style="margin-right: 10px;" type="button" onclick="remover(28)">-</button>
+                                        <span class="qnt_produtos">0</span>
+                                        <button style="margin-left: 10px;" type="button" onclick="adicionar(28)">+</button>
+                                    </span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start;">
+                                <div style="align-self: center; padding-left:2px;" id="produto27">
+                                    <span id="nome_produto">PÃO AUSTRALIANO ARTESANAL<br></span>
+                                    <small id="valor">R$9,00</small>
+                                    <span>
+                                        <button style="margin-right: 10px;" type="button" onclick="remover(27)">-</button>
+                                        <span class="qnt_produtos">0</span>
+                                        <button style="margin-left: 10px;" type="button" onclick="adicionar(27)">+</button>
+                                    </span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start;">
+                                <div style="align-self: center; padding-left:2px;" id="produto26">
+                                    <span id="nome_produto">PÃO DE BRIOCHE ARTESANAL<br></span>
+                                    <small id="valor">R$9,00</small>
+                                    <span>
+                                        <button style="margin-right: 10px;" type="button" onclick="remover(26)">-</button>
+                                        <span class="qnt_produtos">0</span>
+                                        <button style="margin-left: 10px;" type="button" onclick="adicionar(26)">+</button>
+                                    </span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start;">
+                                <div style="align-self: center; padding-left:2px;" id="produto25">
+                                    <span id="nome_produto">PÃO DE HAMBÚRGUER ARTESANAL<br></span>
+                                    <small id="valor">R$9,00</small>
+                                    <span>
+                                        <button style="margin-right: 10px;" type="button" onclick="remover(25)">-</button>
+                                        <span class="qnt_produtos">0</span>
+                                        <button style="margin-left: 10px;" type="button" onclick="adicionar(25)">+</button>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>   
+                </div>
+                <div>
+                    <h3>
+                        <span style="background-color: #fb3f52; padding: 8px; border-radius: 4%;">ADICIONAIS</span>  
+                    </h3>
+                        <ul>
+                            <li style="display: flex; align-items: flex-start;">
+                                <div style="align-self: center; padding-left:2px;" id="produto24">
+                                    <span id="nome_produto">ALFACE AMERICANA<br></span>
+                                    <small id="valor">R$0,60</small>
+                                        <span>
+                                            <button style="margin-right: 10px;" type="button" onclick="remover(24)">-</button>
+                                            <span class="qnt_produtos">0</span>
+                                            <button style="margin-left: 10px;" type="button" onclick="adicionar(24)">+</button>
+                                        </span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start;">
+                                <div style="align-self: center; padding-left:2px;" id="produto23">
+                                    <span id="nome_produto">BACON ARTESANAL<br></span>
+                                    <small id="valor">R$1,00</small>
+                                        <span>
+                                            <button style="margin-right: 10px;" type="button" onclick="remover(23)">-</button>
+                                            <span class="qnt_produtos">0</span>
+                                            <button style="margin-left: 10px;" type="button" onclick="adicionar(23)">+</button>
+                                        </span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start;">
+                                <div style="align-self: center; padding-left:2px;" id="produto22">
+                                    <span id="nome_produto">BATATA FRITA - 100G<br></span>
+                                    <small id="valor">R$5,00</small>
+                                        <span>
+                                            <button style="margin-right: 10px;" type="button" onclick="remover(22)">-</button>
+                                            <span class="qnt_produtos">0</span>
+                                            <button style="margin-left: 10px;" type="button" onclick="adicionar(22)">+</button>
+                                        </span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start;">
+                                <div style="align-self: center; padding-left:2px;" id="produto21">
+                                    <span id="nome_produto">BATATA FRITA - 400G<br></span>
+                                    <small id="valor">R$9,90</small>
+                                        <span>
+                                            <button style="margin-right: 10px;" type="button" onclick="remover(21)">-</button>
+                                            <span class="qnt_produtos">0</span>
+                                            <button style="margin-left: 10px;" type="button" onclick="adicionar(21)">+</button>
+                                        </span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start;">
+                                <div style="align-self: center; padding-left:2px;" id="produto20">
+                                    <span id="nome_produto">BATATA PALHA - 400G<br></span>
+                                    <small id="valor">R$3,00</small>
+                                        <span>
+                                            <button style="margin-right: 10px;" type="button" onclick="remover(20)">-</button>
+                                            <span class="qnt_produtos">0</span>
+                                            <button style="margin-left: 10px;" type="button" onclick="adicionar(20)">+</button>
+                                        </span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start;">
+                                <div style="align-self: center; padding-left:2px;" id="produto19">
+                                   <span id="nome_produto">CALABRESA<br></span>
+                                    <small id="valor">R$3,50</small>
+                                        <span>
+                                            <button style="margin-right: 10px;" type="button" onclick="remover(19)">-</button>
+                                            <span class="qnt_produtos">0</span>
+                                            <button style="margin-left: 10px;" type="button" onclick="adicionar(19)">+</button>
+                                        </span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start;">
+                                <div style="align-self: center; padding-left:2px;" id="produto18">
+                                    <span id="nome_produto">CARNE HAMBURGUER - 56G<br></span>
+                                    <small id="valor">R$3,50</small>
+                                        <span>
+                                            <button style="margin-right: 10px;" type="button" onclick="remover(18)">-</button>
+                                            <span class="qnt_produtos">0</span>
+                                            <button style="margin-left: 10px;" type="button" onclick="adicionar(18)">+</button>
+                                        </span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start;">
+                                <div style="align-self: center; padding-left:2px;" id="produto17">
+                                    <span id="nome_produto">CEBOLA ROXA<br></span>
+                                    <small id="valor">R$1,50</small>
+                                        <span>
+                                            <button style="margin-right: 10px;" type="button" onclick="remover(17)">-</button>
+                                            <span class="qnt_produtos">0</span>
+                                            <button style="margin-left: 10px;" type="button" onclick="adicionar(17)">+</button>
+                                        </span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start;">
+                                <div style="align-self: center; padding-left:2px;" id="produto16">
+                                    <span id="nome_produto">HAMBÚRGUER BOVINO ARTESANAL 100G<br></span>
+                                    <small id="valor">R$6,50</small>
+                                        <span>
+                                            <button style="margin-right: 10px;" type="button" onclick="remover(16)">-</button>
+                                            <span class="qnt_produtos">0</span>
+                                            <button style="margin-left: 10px;" type="button" onclick="adicionar(16)">+</button>
+                                        </span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start;">
+                                <div style="align-self: center; padding-left:2px;" id="produto15">
+                                    <span id="nome_produto">HAMBÚRGUER PICANHA ARTESANAL 120G<br></span>
+                                    <small id="valor">R$7,50</small>
+                                        <span>
+                                            <button style="margin-right: 10px;" type="button" onclick="remover(15)">-</button>
+                                            <span class="qnt_produtos">0</span>
+                                            <button style="margin-left: 10px;" type="button" onclick="adicionar(15)">+</button>
+                                        </span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start;">
+                                <div style="align-self: center; padding-left:2px;" id="produto14">
+                                   <span id="nome_produto"> MUSSARELA<br></span>
+                                    <small id="valor">R$3,00</small>
+                                        <span>
+                                            <button style="margin-right: 10px;" type="button" onclick="remover(14)">-</button>
+                                            <span class="qnt_produtos">0</span>
+                                            <button style="margin-left: 10px;" type="button" onclick="adicionar(14)">+</button>
+                                        </span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start;">
+                                <div style="align-self: center; padding-left:2px;" id="produto13">
+                                    <span id="nome_produto">ANÉIS DE CEBOLA EMPANADO<br></span>
+                                    <small id="valor">R$1,50</small>
+                                        <span>
+                                            <button style="margin-right: 10px;" type="button" onclick="remover(13)">-</button>
+                                            <span class="qnt_produtos">0</span>
+                                            <button style="margin-left: 10px;" type="button" onclick="adicionar(13)">+</button>
+                                        </span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start;">
+                                <div style="align-self: center; padding-left:2px;" id="produto12">
+                                    <span id="nome_produto">OVO<br></span>
+                                    <small id="valor">R$0,50</small>
+                                        <span>
+                                            <button style="margin-right: 10px;" type="button" onclick="remover(12)">-</button>
+                                            <span class="qnt_produtos">0</span>
+                                            <button style="margin-left: 10px;" type="button" onclick="adicionar(12)">+</button>
+                                        </span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start;">
+                                <div style="align-self: center; padding-left:2px;" id="produto11">
+                                    <span id="nome_produto">PRESUNTO<br></span>
+                                    <small id="valor">R$3,50</small>
+                                        <span>
+                                            <button style="margin-right: 10px;" type="button" onclick="remover(11)">-</button>
+                                            <span class="qnt_produtos">0</span>
+                                            <button style="margin-left: 10px;" type="button" onclick="adicionar(11)">+</button>
+                                        </span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start;">
+                                <div style="align-self: center; padding-left:2px;" id="produto10">
+                                    <span id="nome_produto">QUEIJO CHEDDAR<br></span>
+                                    <small id="valor">R$2,50</small>
+                                        <span>
+                                            <button style="margin-right: 10px;" type="button" onclick="remover(10)">-</button>
+                                            <span class="qnt_produtos">0</span>
+                                            <button style="margin-left: 10px;" type="button" onclick="adicionar(10)">+</button>
+                                        </span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start;">
+                                <div style="align-self: center; padding-left:2px;" id="produto9">
+                                    <span id="nome_produto"> QUEIJO PRATO<br></span>
+                                    <small id="valor">R$2,50</small>
+                                        <span>
+                                            <button style="margin-right: 10px;" type="button" onclick="remover(9)">-</button>
+                                            <span class="qnt_produtos">0</span>
+                                            <button style="margin-left: 10px;" type="button" onclick="adicionar(9)">+</button>
+                                        </span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start;">
+                                <div style="align-self: center; padding-left:2px;" id="produto8">
+                                   <span id="nome_produto"> QUEIJO PROVOLONE<br></span>
+                                    <small id="valor">R$3,50</small>
+                                        <span>
+                                            <button style="margin-right: 10px;" type="button" onclick="remover(8)">-</button>
+                                            <span class="qnt_produtos">0</span>
+                                            <button style="margin-left: 10px;" type="button" onclick="adicionar(8)">+</button>
+                                        </span>
+                                    </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start;">
+                                <div style="align-self: center; padding-left:2px;" id="produto7">
+                                   <span id="nome_produto"> QUEIJO DO REINO<br></span>
+                                    <small id="valor">R$4,00</small>                              
+                                        <span>
+                                            <button style="margin-right: 10px;" type="button" onclick="remover(7)">-</button>
+                                            <span class="qnt_produtos">0</span>
+                                            <button style="margin-left: 10px;" type="button" onclick="adicionar(7)">+</button>
+                                        </span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start;"> 
+                                <div style="align-self: center; padding-left:2px;" id="produto6">
+                                    <span id="nome_produto">PURÊ DE BATATA<br></span>
+                                    <small id="valor">R$4,00</small>
+                                        <span>
+                                            <button style="margin-right: 10px;" type="button" onclick="remover(6)">-</button>
+                                            <span class="qnt_produtos">0</span>
+                                            <button style="margin-left: 10px;" type="button" onclick="adicionar(6)">+</button>
+                                        </span>
+                                </div>
+                            </li>
+                        </ul>    
+                </div>
+                <div>
+                    <h3>
+                        <span style="background-color: #fb3f52; padding: 8px; border-radius: 4%;"> MOLHOS ESPECIAIS</span>  
+                    </h3>
+                        <ul>
+                            <li style="display: flex; align-items: flex-start;">
+                                <div style="align-self: center; padding-left:2px;" id="produto5">
+                                    <span id="nome_produto">BARBECUE<br></span>
+                                    <small  id="valor">R$2,00</small>
+                                        <span>
+                                            <button style="margin-right: 10px;" type="button" onclick="remover(5)">-</button>
+                                            <span class="qnt_produtos">0</span>
+                                            <button style="margin-left: 10px;" type="button" onclick="adicionar(5)">+</button>
+                                        </span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start;">
+                                <div style="align-self: center; padding-left:2px;" id="produto4">                             
+                                    <span id="nome_produto">MAIONESE GRILL DEFUMADA<br></span>
+                                    <small id="valor">R$2,50</small>                         
+                                        <span>
+                                            <button style="margin-right: 10px;" type="button" onclick="excluir(4)">-</button>
+                                            <span class="qnt_produtos">0</span>
+                                            <button style="margin-left: 10px;" type="button" onclick="adicionar(4)">+</button>
+                                        </span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start;">
+                                <div style="align-self: center; padding-left:2px;" id="produto3">
+                                    <span id="nome_produto">MOLHO BILLY JACK<br></span>
+                                    <small id="valor">R$2,50</small>          
+                                        <span>
+                                            <button style="margin-right: 10px;" type="button" onclick="remover(3)">-</button>
+                                            <span class="qnt_produtos">0</span>
+                                            <button style="margin-left: 10px;" type="button" onclick="adicionar(3)">+</button>
+                                        </span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start;">
+                                <div style="align-self: center; padding-left:2px;" id="produto2">
+                                    <span id="nome_produto"> MOLHO VERDE<br></span>          
+                                    <small id="valor">R$2,00</small>                                         
+                                        <span>
+                                            <button style="margin-right: 10px;" type="button" onclick="remover(2)">-</button>
+                                            <span class="qnt_produtos">0</span>
+                                            <button style="margin-left: 10px;" type="button" onclick="adicionar(2)">+</button>
+                                        </span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start;">
+                                <div style="align-self: center; padding-left:2px;" id="produto1">
+                                    <span id="nome_produto">MOLHO MOSTARDA E MEL<br></span>
+                                    <small id="valor">R$2,00</small>
+                                        <span>
+                                            <button style="margin-right: 10px;" type="button" onclick="remover(1)">-</button>
+                                            <span class="qnt_produtos">0</span>
+                                            <button style="margin-left: 10px;" type="button" onclick="adicionar(1)">+</button>
+                                        </span>
+                                </div>
+                            </li>
+                        </ul>                  
+                </div>  
+                <div>
+                    <h5 class="item-categoria-nome" style="margin-top:15px;">OBSERVAÇÕES</h5>
+                    <textarea class="campoObs" maxlength="250" placeholder="Utilize para remover ingredientes e outras observações. Não utilizar para adicionar ingredientes" id="txtObs" name=""></textarea>
+                </div>
+        
+                <div style="background-color: #f70019; padding: 3px; border-radius: 3%;" >
+                    <tbody id="ingredientes">
+
+                    </tbody>
+
+                    <h4>Total: R$ <span id="totalAdc">0,00</span></h4>
+                </div>
+                
+            </main>
+        </section>
+    <script src="js/script.js"></script>
+    </body>
+</html> 
+

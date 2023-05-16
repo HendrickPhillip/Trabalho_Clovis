@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <div class="divcapa"><img src="img/capa.jpg" alt="capa" id="capa"></div>
+    <title>Fast Burger</title>
+   
+  </head>
+
+    <body class="corpo">
+        <header>
+            <nav id="barraIni"> 
+                <a href="inicio.html"> Inicio</a>
+                <a href="cardapio.html">Cardápio</a>
+                <a href="monte.html">Monte seu Hambúrguer</a>
+                <a href="carrinho.html">Carrinho</a>
+                <a href="login.html">Login</a>
+            </nav>
+        </header> 
+        <section class="pagina" style="background-color: #e4e2e2;">
+            <div style="margin-left: 10px; text-align: center; font-size: 16px">
+                <div class="titulo-topo" style="padding: 15px; display: flex; justify-content: center" >
+                    <span style="text-transform: uppercase;  font-size: 30px;">Fast Burger</span>
+                    <div class="space"></div>
+                </div>
+
+                <div id="login">
+                    <h2>Login</h2>
+                    <input type="email" id="loginEmail" placeholder="E-mail" style="margin-top: 2px"><br>
+                    <input type="password" id="loginSenha" placeholder="Senha" style="margin-top: 2px"><br>
+                    <button onclick="entrar()" style="border-radius: 5%; margin-top: 4px">Entrar</button>
+                    <a href="cadastro.html" style="font-size: 0px; padding: 0px;"><button style="border-radius: 5%; margin-top: 4px"> Cadastrar</button></a>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            function entrar() {
+              var email = document.getElementById('loginEmail').value;
+              var senha = document.getElementById('loginSenha').value;
+
+              console.log('Login:');
+              console.log('E-mail:', email);
+              console.log('Senha:', senha);
+
+              document.getElementById('loginEmail').value = '';
+              document.getElementById('loginSenha').value = '';
+            }
+        </script>
+    </body>       
+</html>

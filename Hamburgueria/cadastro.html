@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <div class="divcapa"><img src="img/capa.jpg" alt="capa" id="capa"></div>
+    <title>Fast Burger</title>
+   
+  </head>
+
+    <body class="corpo">
+        <header>
+            <nav id="barraIni"> 
+                <a href="inicio.html"> Inicio</a>
+                <a href="cardapio.html">Cardápio</a>
+                <a href="monte.html">Monte seu Hambúrguer</a>
+                <a href="carrinho.html">Carrinho</a>
+                <a href="login.html">Login</a>
+            </nav>
+        </header>
+        <section class="pagina" style="background-color: #e4e2e2;">
+            <div style="margin-left: 10px; text-align: center; font-size: 16px">
+                <div id="cadastro">
+                    <h2 >Cadastro</h2>
+                    <input type="text" id="cadastroNome" placeholder="Nome" style="margin-top: 2px"><br>
+                    <input type="email" id="cadastroEmail" placeholder="E-mail" style="margin-top: 2px"><br>
+                    <input type="password" id="cadastroSenha" placeholder="Senha" style="margin-top: 2px"><br>
+                    <input type="cpf" id="cadastroCpf" placeholder="CPF" style="margin-top: 2px"><br>
+                    <button onclick="cadastrar()" style="border-radius: 5%; margin-top: 4px">Cadastrar</button>
+                </div>
+            </div>
+        </section>
+        <script>
+            function cadastrar() {
+                var nome = document.getElementById('cadastroNome').value;
+                var email = document.getElementById('cadastroEmail').value;
+                var senha = document.getElementById('cadastroSenha').value;
+                var cpf = document.getElementById('cadastroCpf').value;
+                
+                if (nome && email && senha && cpf) {
+                    var usuario = {
+                    nome: nome,
+                    email: email,
+                    senha: senha,
+                    cpf: cpf
+                    };
+
+                    console.log('Novo cadastro:');
+                    console.log('Nome:', nome);
+                    console.log('E-mail:', email);
+                    console.log('Senha:', senha);
+                    console.log('CPF:', cpf);
+                        
+                    localStorage.setItem('usuario', JSON.stringify(usuario));  
+
+                    document.getElementById('cadastroNome').value = '';
+                    document.getElementById('cadastroEmail').value = '';
+                    document.getElementById('cadastroSenha').value = '';
+                    document.getElementById('cadastroCpf').value = '';
+
+                }else{
+                    alert('Preencha todos os campos.');
+                }
+                var usuarioSalvo = localStorage.getItem('usuario');
+                if (usuarioSalvo) {
+                var usuario = JSON.parse(usuarioSalvo);
+    
+                // Exemplo de exibição dos dados recuperados
+                console.log('Dados salvos:');
+                console.log('Nome:', usuario.nome);
+                console.log('E-mail:', usuario.email);
+                console.log('Senha:', usuario.senha);
+                console.log('CPF:', usuario.cpf);
+                }
+            }
+        </script>  
+    </body>
+</html>
