@@ -27,4 +27,22 @@ public class Moto implements MyBuilder {
         return montadora;
     }
 
+    
+    public void inserePortas() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'inserePortas'");
+    }
+
+    
+    public void insereJanelas() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'insereJanelas'");
+    }
+
+    
+    public void inserePortaMalas() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'inserePortaMalas'");
+    }
+
 }

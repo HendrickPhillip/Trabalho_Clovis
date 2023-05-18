@@ -1,21 +1,21 @@
 package com.clovis;
 
 public interface MyBuilder {
-    void montaLataria();
+    public void montaLataria();
 
-    void inserePneus();
+    public void inserePneus();
 
-    void insereFarois();
+    public void insereFarois();
 
-    void inserePortas();
+    public void inserePortas();
 
-    void insereJanelas();
+    public void insereJanelas();
 
-    void insereTankCombustivel();
+    public void insereTankCombustivel();
 
-    void inserePortaMalas();
+    public void inserePortaMalas();
 
-    void insereRetrovisor();
+    public void insereRetrovisor();
 
     Montadora getVeiculo();
 }
