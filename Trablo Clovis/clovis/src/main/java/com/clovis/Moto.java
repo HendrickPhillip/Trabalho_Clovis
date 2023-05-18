@@ -27,22 +27,21 @@ public class Moto implements MyBuilder {
         return montadora;
     }
 
-    
+    // Métodos da interface não utilizados
+
     public void inserePortas() {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'inserePortas'");
+        // throw new UnsupportedOperationException("Unimplemented method 'inserePortas'");
     }
 
-    
     public void insereJanelas() {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'insereJanelas'");
+        // throw new UnsupportedOperationException("Unimplemented method 'insereJanelas'");
     }
 
-    
     public void inserePortaMalas() {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'inserePortaMalas'");
+        // throw new UnsupportedOperationException("Unimplemented method 'inserePortaMalas'");
     }
 
 }
